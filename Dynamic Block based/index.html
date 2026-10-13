@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace | Stories That Matter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">BlogSpace<span>.</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#blogs" class="nav-btn">Explore Blogs</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO BLOGSPACE</p>
+            <h2>Ideas that inspire.<br>Stories that <span>connect.</span></h2>
+            <p class="hero-description">
+                Discover fresh perspectives, creative ideas, and stories
+                from people who love sharing knowledge.
+            </p>
+            <a href="#blogs" class="primary-btn">Explore Stories →</a>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <div class="section-heading">
+            <div>
+                <p class="tagline">OUR LATEST STORIES</p>
+                <h2>Explore Our Blogs</h2>
+            </div>
+            <input type="text" id="searchInput"
+                   placeholder="Search articles...">
+        </div>
+
+        <div class="categories">
+            <button class="category active" data-category="All">All</button>
+            <button class="category" data-category="Technology">Technology</button>
+            <button class="category" data-category="Lifestyle">Lifestyle</button>
+            <button class="category" data-category="Travel">Travel</button>
+            <button class="category" data-category="Business">Business</button>
+        </div>
+
+        <div class="blog-grid" id="blogGrid">
+
+            <article class="blog-card" data-category="Technology">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800"
+                     alt="People collaborating with technology">
+                <div class="card-content">
+                    <span class="category-label">Technology</span>
+                    <h3>The Future of Artificial Intelligence</h3>
+                    <p>Explore how AI is transforming the way we work,
+                       learn, and interact with the world.</p>
+                    <div class="card-footer">
+                        <span>Oct 10, 2026 · 5 min read</span>
+                        <button class="save-btn" aria-label="Save article">♡</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Lifestyle">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800"
+                     alt="Notebook and workspace">
+                <div class="card-content">
+                    <span class="category-label">Lifestyle</span>
+                    <h3>Building Habits for a Better Life</h3>
+                    <p>Small daily habits can create meaningful changes
+                       in your productivity and happiness.</p>
+                    <div class="card-footer">
+                        <span>Oct 08, 2026 · 4 min read</span>
+                        <button class="save-btn" aria-label="Save article">♡</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Travel">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+                     alt="Beautiful mountain landscape">
+                <div class="card-content">
+                    <span class="category-label">Travel</span>
+                    <h3>Discovering the Beauty of Nature</h3>
+                    <p>Take a break from everyday life and discover
+                       unforgettable destinations and adventures.</p>
+                    <div class="card-footer">
+                        <span>Oct 05, 2026 · 6 min read</span>
+                        <button class="save-btn" aria-label="Save article">♡</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Business">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+                     alt="Business analytics dashboard">
+                <div class="card-content">
+                    <span class="category-label">Business</span>
+                    <h3>How to Start Your Own Business</h3>
+                    <p>Learn the fundamentals of turning a simple idea
+                       into a practical business opportunity.</p>
+                    <div class="card-footer">
+                        <span>Oct 02, 2026 · 7 min read</span>
+                        <button class="save-btn" aria-label="Save article">♡</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Technology">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+                     alt="Laptop and digital workspace">
+                <div class="card-content">
+                    <span class="category-label">Technology</span>
+                    <h3>Essential Skills for Every Developer</h3>
+                    <p>Discover the technical and problem-solving skills
+                       that help developers grow in their careers.</p>
+                    <div class="card-footer">
+                        <span>Sep 28, 2026 · 5 min read</span>
+                        <button class="save-btn" aria-label="Save article">♡</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Lifestyle">
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
+                     alt="Sunrise over a peaceful landscape">
+                <div class="card-content">
+                    <span class="category-label">Lifestyle</span>
+                    <h3>Finding Balance in a Busy World</h3>
+                    <p>Simple ways to manage your time, reduce stress,
+                       and make room for what matters.</p>
+                    <div class="card-footer">
+                        <span>Sep 25, 2026 · 4 min read</span>
+                        <button class="save-btn" aria-label="Save article">♡</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>No articles found. Try another search.</p>
+        <button class="load-btn" id="loadMore">Load More Stories</button>
+    </section>
+
+    <section class="about" id="about">
+        <p class="tagline">OUR PURPOSE</p>
+        <h2>Every story has the power to inspire.</h2>
+        <p>BlogSpace is a place for curious minds, creative thinkers,
+           and passionate writers to share ideas with the world.</p>
+    </section>
+
+    <section class="newsletter" id="contact">
+        <h2>Never Miss a Story</h2>
+        <p>Get the latest articles and ideas delivered to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="emailInput"
+                   placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="newsletterMessage" aria-live="polite"></p>
+    </section>
+
+    <footer>
+        <h2>BlogSpace<span>.</span></h2>
+        <p>Ideas, stories, and inspiration for everyone.</p>
+        <p>© 2026 BlogSpace. All rights reserved.</p>
+    </footer>
+
+    <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const cards = [...document.querySelectorAll(".blog-card")];
+        const categoryButtons = document.querySelectorAll(".category");
+        const loadMore = document.getElementById("loadMore");
+        const noResults = document.getElementById("noResults");
+
+        let selectedCategory = "All";
+        let showingAll = false;
+
+        function filterBlogs() {
+            const search = searchInput.value.toLowerCase();
+            let visibleCount = 0;
+
+            cards.forEach((card, index) => {
+                const matchesCategory =
+                    selectedCategory === "All" ||
+                    card.dataset.category === selectedCategory;
+
+                const matchesSearch =
+                    card.textContent.toLowerCase().includes(search);
+
+                const matchesLimit = showingAll || index < 3;
+                const visible = matchesCategory &&
+                                matchesSearch && matchesLimit;
+
+                card.style.display = visible ? "block" : "none";
+
+                if (visible) visibleCount++;
+            });
+
+            noResults.hidden = visibleCount !== 0;
+            loadMore.style.display =
+                showingAll || cards.length <= 3 ? "none" : "block";
+        }
+
+        categoryButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                categoryButtons.forEach(btn =>
+                    btn.classList.remove("active"));
+
+                button.classList.add("active");
+                selectedCategory = button.dataset.category;
+                showingAll = false;
+                filterBlogs();
+            });
+        });
+
+        searchInput.addEventListener("input", () => {
+            showingAll = true;
+            filterBlogs();
+        });
+
+        loadMore.addEventListener("click", () => {
+            showingAll = true;
+            filterBlogs();
+        });
+
+        document.querySelectorAll(".save-btn").forEach(button => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("saved");
+                button.textContent =
+                    button.classList.contains("saved") ? "♥" : "♡";
+            });
+        });
+
+        const themeToggle = document.getElementById("themeToggle");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            themeToggle.textContent =
+                document.body.classList.contains("dark-mode")
+                    ? "☀️" : "🌙";
+        });
+
+        document.getElementById("newsletterForm")
+            .addEventListener("submit", event => {
+                event.preventDefault();
+                document.getElementById("newsletterMessage").textContent =
+                    "Thanks for your interest! Newsletter signup needs a connected service.";
+                event.target.reset();
+            });
+
+        filterBlogs();
+    </script>
+</body>
+</html>
